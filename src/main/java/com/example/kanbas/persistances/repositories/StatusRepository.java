@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
 @Repository
-public interface StatusRepository extends JpaRepository<StatusEntity, Long> {
+public interface StatusRepository extends JpaRepository<StatusEntity, Integer> {
 
 
 

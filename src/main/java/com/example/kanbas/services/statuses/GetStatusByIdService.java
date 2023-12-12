@@ -13,7 +13,7 @@ import java.util.Optional;
 public class GetStatusByIdService {
     private StatusRepository statusRepository;
 
-    public StatusEntity execute(Long id) {
+    public StatusEntity execute(Integer id) {
         Optional<StatusEntity> status=  statusRepository.findById(id);
         if (status.isPresent()) {
             return status.get();

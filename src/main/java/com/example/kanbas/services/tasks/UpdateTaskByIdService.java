@@ -18,10 +18,12 @@ public class UpdateTaskByIdService {
     GetBoardByIdService getBoardByIdService;
     GetStatusByIdService getStatusByIdService;
     public TaskEntity execute(TaskDTO taskDTO, Long id){
-        StatusEntity status = getStatusByIdService.execute(taskDTO.getStatus_id());
+       /* StatusEntity status = getStatusByIdService.execute(taskDTO.getStatus_id());
         BoardEntity boaard= getBoardByIdService.execute(taskDTO.getBd_id());
         TaskEntity taskUpdated = new TaskEntity(id,taskDTO.getName(), taskDTO.getDescription(), status,boaard);
         taskRepository.save(taskUpdated);
-        return taskUpdated;
+        return taskUpdated;*/
+        return null;
+
     }
 }

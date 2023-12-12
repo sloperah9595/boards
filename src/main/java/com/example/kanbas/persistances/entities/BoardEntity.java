@@ -14,7 +14,7 @@ public class BoardEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //identity para que no se siga el contador de otros registros
     @Column(name = "bd_id", nullable = false, unique = true)
-    private Long bd_id;
+    private Integer bd_id;
 
 
     @Column(name = "bd_name", length = 100, unique = true)

@@ -19,10 +19,12 @@ public class SaveTaskService {
     GetStatusByIdService getStatusById;
     @Transactional
     public TaskEntity execute(TaskDTO dtoTask) {
-        StatusEntity status = getStatusById.execute(dtoTask.getStatus_id());
+     /*   StatusEntity status = getStatusById.execute(dtoTask.getStatus_id());
         BoardEntity board = getBoardByIdService.execute(dtoTask.getBd_id());
         TaskEntity task = new TaskEntity(dtoTask.getName(),dtoTask.getDescription(),status,board);
         taskRepository.save(task);
-        return task;
+        return task;*/
+        return null;
+
     }
 }

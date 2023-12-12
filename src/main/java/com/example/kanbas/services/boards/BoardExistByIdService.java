@@ -1,7 +1,7 @@
 package com.example.kanbas.services.boards;
 
 import com.example.kanbas.persistances.entities.BoardEntity;
-import com.example.kanbas.persistances.repositories.BoardRepository;
+import com.example.kanbas.repositories.BoardRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -14,11 +14,12 @@ public class BoardExistByIdService {
     private final BoardRepository boardRepository;
 
     public Boolean execute(Long id) {
-        Boolean exist =true;
+      /*  Boolean exist =true;
         Optional<BoardEntity> board = boardRepository.findById(id);
         if (board.isEmpty()) {
             exist= false;
         }
-        return exist;
+        return exist;*/
+        return null;
     }
 }
